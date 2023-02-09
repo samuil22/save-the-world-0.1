@@ -1,0 +1,1 @@
+<img width="150px" src="{{asset('assets/front-end-image/save-the-world-logo.png')}}" alt="">

@@ -1,0 +1,260 @@
+/*================================================
+Default CSS
+=================================================*/
+
+
+@import url("https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap");
+html,
+body {
+    height: 100%;
+    overflow: auto;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+    font-family: "Poppins", sans-serif;
+}
+ 
+img {
+    max-width: 100%;
+    height: auto;
+}
+/* theme btn */
+.theme-btn-one {
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    display: inline-block;
+    border-radius: 0;
+    padding: 10px;
+    text-decoration: none;
+}
+.h4_color{
+    color: #246897;
+}
+/*================================================
+header top CSS
+=================================================*/
+.top_logo_section{
+    background-color: #246897;
+    color: #fff;
+}
+.logo{
+    width: 75px;
+    height: auto;
+    margin-left: 40px;
+    padding: 5px;
+}
+.top_text{
+    padding: 5px 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.menu_text{
+    font-size: 17px;
+    color: #000000 !important;
+}
+/*========================================
+ home page start
+ ======================================== */
+.home_logout_btn{
+    background: none;
+    border: none;
+    color: #fff;
+    padding: 0px 10px;
+}
+.log_text_hp{
+    text-decoration: none;
+    text-transform: capitalize;
+    padding: 0px 5px;
+}
+
+/* --Banner Area-- */
+.home_top_slider{
+    padding: 150px 0;
+    background-size: cover;
+    background-position: center;
+}
+.home_top_slider_content h5{
+    opacity: 0;
+    -webkit-transition: all 1200ms ease;
+    -o-transition: all 1200ms ease;
+    transition: all 1200ms ease;
+    -webkit-transform: translateY(80px);
+    -ms-transform: translateY(80px);
+    transform: translateY(80px);
+}
+.home_top_slider_content h2{
+    padding: 0;
+    font-size: 60px;
+    font-weight: 700;
+    opacity: 0;
+    -webkit-transition: all 1400ms ease;
+    -o-transition: all 1400ms ease;
+    transition: all 1400ms ease;
+    -webkit-transform: translateY(80px);
+    -ms-transform: translateY(80px);
+    transform: translateY(80px);
+}
+.home_top_slider_content h2 span{
+    color: #2c85c1;
+}
+.home_top_slider_content a{
+    opacity: 0;
+    -webkit-transition: all 1600ms ease;
+    -o-transition: all 1600ms ease;
+    transition: all 1600ms ease;
+    -webkit-transform: translateY(80px);
+    -ms-transform: translateY(80px);
+    transform: translateY(80px);
+}
+.home_top_slider_content h4{
+    padding-bottom: 15px;
+    opacity: 0;
+    -webkit-transition: all 1500ms ease;
+    -o-transition: all 1000ms ease;
+    transition: all 1000ms ease;
+    -webkit-transform: translateY(80px);
+    -ms-transform: translateY(80px);
+    transform: translateY(80px);
+}
+#home_top_banner .active .home_top_slider_content h5 {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0);
+    -webkit-transition-delay: 1300ms;
+         -o-transition-delay: 1300ms;
+            transition-delay: 1300ms;
+}
+  #home_top_banner .active .home_top_slider_content h2 {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0);
+    -webkit-transition-delay: 1500ms;
+         -o-transition-delay: 1500ms;
+            transition-delay: 1500ms;
+  }
+  #home_top_banner .active .home_top_slider_content h4 {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0);
+    -webkit-transition-delay: 1600ms;
+         -o-transition-delay: 1600ms;
+            transition-delay: 1600ms;
+  }
+  #home_top_banner .active .home_top_slider_content a{
+    opacity: 1;
+    -webkit-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0);
+    -webkit-transition-delay: 1700ms;
+         -o-transition-delay: 1700ms;
+            transition-delay: 1700ms;
+  }
+  #home_top_banner .owl-nav {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    top: 50%;
+    transform: translateY(-50%);
+}
+#home_top_banner .owl-carousel .owl-nav .owl-prev {
+    -webkit-transform: translateX(20px);
+    -moz-transform: translateX(20px);
+    -ms-transform: translateX(20px);
+    -o-transform: translateX(20px);
+    transform: translateX(20px);
+}
+#home_top_banner .owl-carousel .owl-nav .owl-next {
+    -webkit-transform: translateX(-20px);
+    -moz-transform: translateX(-20px);
+    -ms-transform: translateX(-20px);
+    -o-transform: translateX(-20px);
+    transform: translateX(-20px);
+}
+#home_top_banner .owl-carousel .owl-nav .owl-next, 
+#home_top_banner .owl-carousel .owl-nav .owl-prev {
+    height: 30px;
+    width: 30px;
+    background: #2c85c1;
+    border-radius: 50%;
+    color: #fff;
+    box-shadow: 0 1px 15px 0 rgb(0 0 0 / 10%);
+    visibility: hidden;
+    transition: .4s all ease-in-out;
+}
+#home_top_banner .owl-carousel:hover .owl-nav .owl-prev,
+#home_top_banner  .owl-carousel:hover .owl-nav .owl-next{
+    visibility: visible;
+    opacity: 1;
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0);
+}
+/* did you know  */
+.you-know-logo{
+    height: 65px;
+    margin-bottom: 15px;
+}
+.know-img img{
+    width: 130px;
+    height: auto;
+    padding: 15px;
+}
+/* information text  */
+.info-text p{
+    text-align: justify;
+}
+.info-text h4{
+    color: cadetblue;
+}
+
+/* statistics area  */
+.statistics-text h4 {
+    color: cadetblue;
+}
+.statistics-text p{
+    font-size: 22px;
+    color: yellowgreen;
+}
+.statistics-text .stat_span{
+    font-size: 13px;
+    font-weight: 400;
+    color: teal;
+}
+.statistics-icon i{
+    font-size: 50px;
+}
+.statistics-text {
+    background: #e2e6e987;
+    padding: 24px;
+    height: 315px;
+    border-radius: 5px;
+    color: #151c26;
+}
+
+/*========================================
+ home page end
+ ======================================== */
+/* footer area  */
+#footer{
+    background: #ececec;
+}
+.footer-social {
+    font-size: 30px;
+    gap: 25px;
+    padding-top: 10px;
+    justify-content: center;
+}
+.last-footer{
+    background: #246897;
+    color: #fff;
+}
